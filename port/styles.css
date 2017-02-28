@@ -10,8 +10,15 @@ div {
     padding: 0;
     border: 0;
     margin: 0;
-    width: 100%;
+        width: 100%;
 }
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+
 .come-in {
     transform: translateY(150px);
     animation: come-in 0.8s ease forwards;
@@ -30,7 +37,6 @@ div {
 }
 div:after {
     display: inline-block;
-    width: 100%;
 }
 .square {
     background: #2db34a;
@@ -60,7 +66,7 @@ div:after {
     z-index: 0;
 }
 body {
-    height: 600px;
+    height: 100%;
     width: screen;
     position: absolute;
     background: #3498DB;
@@ -91,12 +97,12 @@ div:after {
     height: 75px;
     border-radius: 50%;
     color: #ECF0F1;
-    line-height: 5vw;
+    line-height: 2;
     text-align: center;
     background: #2980B9;
     position: absolute;
-    top: 40px;
-    right: 50px;
+    top: 5vw;
+    left: 3vw;
     z-index: 2;
 }
 .circle2 {
@@ -104,25 +110,26 @@ div:after {
     height: 75px;
     border-radius: 50%;
     color: #ECF0F1;
-    line-height: 5vw;
+    line-height: 2;
     text-align: center;
     background: #2980B9;
     position: absolute;
-    top: 40px;
-    left: 50px;
+    top: 5vw;
+    right: 3vw;
     z-index: 2;
+    float:left;
 }
 .circle3 {
     width: 75px;
     height: 75px;
     border-radius: 50%;
     color: #ECF0F1;
-    line-height: 5vw;
+    line-height: 2;
     text-align: center;
     background: #2980B9;
     position: absolute;
-    bottom: -10vw;
-    right: 50px;
+    bottom: 5vw;
+    right: 3vw;
     z-index: 2;
 }
 .circle4 {
@@ -130,12 +137,12 @@ div:after {
     height: 75px;
     border-radius: 50%;
     color: #ECF0F1;
-    line-height: 5vw;
+    line-height: 2;
     text-align: center;
     background: #2980B9;
     position: absolute;
-    bottom: -10vw;
-    left: 50px;
+    bottom: 5vw;
+    left: 3vw;
     z-index: 2;
 }
 h1 {
@@ -188,19 +195,8 @@ h6 {
     font-size: 7vw;
     color: white;
 }
-h7 {
-    font-family: 'Lobster Two', sans-serif;
-    color: #293d51;
-    font-size: 14vw;
-    class="img-responsive";
-    left: 0;
-    margin: 0px;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    z-index: 2;
-}
+
+
 p {} li {
     display: inline;
     text-align: left;
@@ -211,7 +207,7 @@ p {} li {
 #body_div {
     top: 0;
     position: relative;
-    height: 800px;
+    height:100%;
     background-color: #2C3E50;
     z-index: 2;
 }
