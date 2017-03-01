@@ -10,7 +10,7 @@ div {
     padding: 0;
     border: 0;
     margin: 0;
-    width: 100%;
+    width: 100%
 }
 
 @-ms-viewport{
@@ -80,12 +80,12 @@ div {
 }
 div img {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
+        margin-left: 5%;
 }
 div:after {
     display: inline-block;
-    width: 100%;
 }
 }
 .parallax {} .parallax2 {
@@ -181,13 +181,14 @@ h2 {
     color: #E74C3C;
     font-size: 6vw;
     class="img-responsive";
-    left: 0;
-    padding-left: 10px;
+    left: 10;
+padding-left: 10px;
 }
 h3 {
     font-family: sans-serif;
     font-size: 17px;
     writing-mode: tb-rl;
+margin-right: 10%;
     color: #E74C3C;
 }
 h4 {
@@ -202,8 +203,11 @@ h5 {
 }
 h6 {
     font-family: helvetica;
-    font-size: 7vw;
+font-size: 7.4vw;
     color: white;
+    font-weight: bold;
+        margin-bottom: 5%;
+
 }
 
 
@@ -257,7 +261,7 @@ a {
 }
 
 element.style {
-    height: 1s%;
+    height: 26vw;
     background-color: black;
     font-color: white;
     font-size: 36px;
