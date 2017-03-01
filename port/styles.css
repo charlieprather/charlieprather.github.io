@@ -135,6 +135,7 @@ div:after {
     bottom: 5vw;
     right: 3vw;
     z-index: 2;
+
 }
 .circle4 {
     width: 75px;
@@ -243,7 +244,7 @@ header nav {
     text-decoration: none;
     display: inline-block;
     position: fixed;
-    padding: 1em 1em;
+    padding: 1em 2em;
     z-index: 2;
 }
 .circle5 {
