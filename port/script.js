@@ -1,6 +1,6 @@
 $('nav a').click(function () {
   var $href = $(this).attr('href');
-  $('body').stop().animate({
+  $('body,html').stop().animate({
     scrollTop: $($href).offset().top
   }, 1500);
   return false;
