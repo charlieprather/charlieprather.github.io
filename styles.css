@@ -1,0 +1,332 @@
+html, body, h1, h2, h3, h4, h5, h6, div {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 100%
+}
+@-ms-viewport {
+    width: device-width;
+}
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s;
+}
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+}
+@keyframes come-in {
+    to {
+        transform: translateY(0);
+    }
+}
+div:after {
+    display: inline-block;
+}
+.square {
+    background: #2db34a;
+    border-radius: 6px transition-property: background, border-radius;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+.square:hover {
+    background: blue;
+    border-radius: 50%;
+}
+.square1 {
+    border-radius: 6px transition-property: border-radius;
+    transition-duration: .2s;
+    width: 10%;
+    background-image: url("http://res.cloudinary.com/dqle7rqpy/image/upload/v1494251516/ifunded.thumbnail_p9cpna.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition-timing-function: linear;
+    box-shadow: 5px 5px 5px black;
+}
+.square1:hover {
+    background-image: url("http://res.cloudinary.com/dqle7rqpy/image/upload/v1494420097/made2_b5rvai.jpg");
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.square3 {
+    border-radius: 6px transition-property: border-radius;
+    transition-duration: .2s;
+    width: 10%;
+    background-image: url("http://res.cloudinary.com/dqle7rqpy/image/upload/v1494420926/explode_hkjym4.jpg");
+    height: 20vw;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition-timing-function: linear;
+    box-shadow: 5px 5px 5px black;
+}
+.square3:hover {
+    background-image: url("http://res.cloudinary.com/dqle7rqpy/image/upload/v1494420319/made4_ckaao2.jpg");
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.offer-box {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    z-index: 0;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.offer-box h1 {
+    color: #white;
+    z-index: 0;
+}
+.offer-box p {
+    color: #080808;
+    font-size: 12vw;
+    z-index: 0;
+}
+body {
+    height: 100%;
+    width: screen;
+    position: absolute;
+    background: #3498DB;
+}
+div {
+    text-align: justify;
+}
+div img {
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 5%;
+}
+div:after {
+    display: inline-block;
+}
+
+}
+.parallax {}
+.parallax2 {
+    background: #ECF0F1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("http://res.cloudinary.com/dqle7rqpy/image/upload/v1494421973/halfdome_gppeno.jpg");
+}
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #ECF0F1;
+    line-height: 2.5;
+    text-align: center;
+    background: #2980B9;
+    position: absolute;
+    top: 5vw;
+    left: 3vw;
+    z-index: 2;
+}
+.circle2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #ECF0F1;
+    line-height: 2.5;
+    text-align: center;
+    background: #2980B9;
+    position: absolute;
+    top: 5vw;
+    right: 3vw;
+    z-index: 2;
+    float: left;
+}
+.circle3 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #ECF0F1;
+    line-height: 2.5;
+    text-align: center;
+    background: #2980B9;
+    position: absolute;
+    bottom: 5vw;
+    right: 3vw;
+    z-index: 2;
+}
+.circle4 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #ECF0F1;
+    line-height: 2.5;
+    text-align: center;
+    background: #2980B9;
+    position: absolute;
+    bottom: 5vw;
+    left: 3vw;
+    z-index: 2;
+}
+h1 {
+    font-family: 'Lobster Two', sans-serif;
+    color: #E74C3C;
+    font-size: 14vw;
+    left: 0;
+    margin: 0px;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 2;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        width: 100%;
+    }
+    .col-centered {
+        float: none;
+        margin: 0 auto;
+    }
+}
+h2 {
+    font-family: 'Lobster Two', sans-serif;
+    color: #E74C3C;
+    font-size: 6vw;
+    class="img-responsive";
+    left: 10;
+    padding-left: 10px;
+}
+h3 {
+    font-family: sans-serif;
+    font-size: 17px;
+    writing-mode: tb-rl;
+    margin-right: 10%;
+    color: #E74C3C;
+}
+h4 {
+    font-family: sans-serif;
+    font-size: 4vw;
+    color: white;
+}
+h5 {
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    color: #ECF0F1;
+}
+h6 {
+    font-family: helvetica;
+    font-size: 7.4vw;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+p {}
+li {
+    display: inline;
+    text-align: left;
+}
+#toTop img:hover {
+    cursor: pointer;
+}
+#body_div {
+    top: 0;
+    position: relative;
+    height: 100%;
+    background-color: #2C3E50;
+    z-index: 2;
+}
+nav span {
+    transition: all 3s ease-in;
+    position: absolute;
+    z-index: 2;
+}
+header nav {
+    font-size: 1em;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    margin-top: 30px;
+    display: inline-block;
+}
+header nav {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    padding: 1em 2em;
+    z-index: 2;
+}
+.circle5 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.about .one-third, .about .two-thirds {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+a {
+    color: #E74C3C;
+}
+element.style {
+    height: 26vw;
+    background-color: black;
+    font-color: white;
+    font-size: 36px;
+}
+.shrink:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.square-box {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    background: #4679BD;
+}
+.square-box:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.square-content div {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.square-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white
+}
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1.02);
+}
