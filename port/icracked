@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <a href="https://charlieprather.github.io/port/portfolio.html">BACK</a>
+
+</div>
+
+
+
+  <div class="site-wrap">
+
+    <h1>Here is some exmaples of my design work while working at iCracked</h1>
+
+
+    <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/v1494345403/Screen_Shot_2017-05-09_at_5.56.17_PM_vovxg2.png" class="img-responsive  slide-in">
+
+    
+
+    <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/v1494346024/itech_knwmbj.jpg" class="img-responsive  align-right slide-in">
+
+
+  <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/c_scale,w_558/v1494346481/hands-On-Training-device-updated_phme8o.png" class="img-responsive  slide-in">
+
+
+    <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/v1494346125/app_image_white_slbjwc.png" class="align-left img-responsive  slide-in">
+
+
+
+
+    <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/v1494346218/contents_cpxuiy.png" class="align-right  img-responsive  slide-in">
+
+
+<img src="http://res.cloudinary.com/dqle7rqpy/image/upload/v1494346815/screen_shot_2016-06-27_at_11.53.23_am_480_mbkajx.png" class="align-right img-responsive  slide-in"> 
+
+
+
+    <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/c_scale,w_618/v1494346287/facebook_AD_charlie_1_qc1w7t.png" class="align-left  img-responsive slide-in">
+
+<img src="http://res.cloudinary.com/dqle7rqpy/image/upload/v1494346763/Screen_Shot_2016-02-12_at_8.04.01_AM_dl3bol.png" class="align-right img-responsive  slide-in"> 
+
+
+    <img src="http://res.cloudinary.com/dqle7rqpy/image/upload/c_scale,w_504/v1494346292/CostBreakdown_updated_xnscdt.jpg" class="align-left img-responsive  slide-in">
+
+
+  </div>
+
+  <script>
+    function debounce(func, wait = 200, immediate = true) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide(e) {
+      sliderImages.forEach(sliderImage => {
+        // half way through the image
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        // bottom of the image
+        const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+        if (isHalfShown && isNotScrolledPast) {
+          sliderImage.classList.add('active');
+        } else {
+          sliderImage.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
+
+  </script>
+
+  <style>
+    html {
+      box-sizing: border-box;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+    }
+    body {
+      margin: 0;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .site-wrap {
+      margin: 100px auto;
+      background:white;
+      padding:110px;
+      text-align: justify;
+    }
+
+    .align-left {
+      float:left;
+      margin-right:20px;
+    }
+
+    .align-right {
+      float:right;
+      margin-left:20px;
+    }
+
+    .slide-in {
+      opacity:0;
+      transition:all .5s;
+    }
+
+    .align-left.slide-in {
+      transform:translateX(-30%) scale(0.95);
+    }
+    .align-right.slide-in {
+      transform:translateX(30%) scale(0.95);
+    }
+
+    .slide-in.active {
+      opacity:1;
+      transform:translateX(0%) scale(1.02);
+    }
+
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+    z-index: 100000;
+
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 5px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 19px;
+transform: rotate(-90deg);
+  float: left;
+}
+
+}
+
+
+
+  </style>
+
+</body>
+</html>
